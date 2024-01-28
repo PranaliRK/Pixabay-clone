@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top{
+  min-height: 440px;
+  width: 100%;
+  background: url("https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468_640.jpg");
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  
+}
+.navbar{
+  height: 64px;
+  width: 100%;
+  padding: 0 32px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.logo{
+  font-size: 32px;
+  font-weight: 900;
+}
+.buttons{
+  font-weight: 600;
+}
+.buttons .btn{
+  margin-left: 10px;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+.buttons .btn2{
+  background: #00AB6B;
+}
+.home{
+  width: 100%;
+  height: 376px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner{
+  width: 70%;
+}
+.home h1{
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.home h2{
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.searchbar{
+  width: 100%;
+  display: inline-block;
+  background: white;
+  color: #656F79;
+  padding: 16px;
+  border-radius: 30px;
+}
+.searchbar input{
+  width: 75%;
+  padding: 0 10px;
+  outline: none;
+  border: none;
+}
+.bottom{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: relative;
+  bottom: 25px;
+  font-size: 12px;
+}
+.category{
+  width: 80%;
+  font-size: 14px;
+  color: #656F79;
+  margin: auto;
+  position: relative;
+  height: 100px;
+}
+.div1{
+  width: 100%;
+  height: 20px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  overflow-x: scroll;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  
+}
+.div1 span{
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.div1::-webkit-scrollbar{
+  display: none;
+}
+.div2::-webkit-scrollbar{
+  display: none;
+}
+.div2{
+  width: 100%;
+  height: 30px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+  gap: 10px;
+  padding-left: 100px;
+}
+.div2 span{
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.btn3{
+  margin-left: 10px;
+  width: auto;
+  border-radius: 30px;
+  padding: 0 16px;
+}
+.btn4{
+  width: auto;
+  border-radius: 10px;
+  border: 1px solid #CECED2;
+  background: white;
+  padding: 10px;
+}
+.photo{
+  height: auto;
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.photo img:hover{
+  transform: scale(1.02);
+  transition: all 2s ease-in-out;
+}
+.popup-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+}
+.popup-image img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  max-width: 75%;
+  max-height: 75%;
+  object-fit: contain;
+  border: 3px solid white;
+}
+.popup-image span{
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+  color: white;
+}
+@media screen and (max-width:700px) {
+  .logo{
+      font-size: 25px;
+  }
+  .buttons .expup{
+      display: none;
+  }
+  .buttons:nth-child(1){
+      background: red;
+  }
+  .home h1{
+      font-size: 22px;
+  }
+  .home h2{
+      font-size: 12px;
+      margin-bottom: 24px;
+  }
+  .searchbar input{
+      width: 50%;
+      padding: 0 10px;
+  }
+  
+}
+@media screen and (max-width:300px) {
+  .buttons .btn{
+      padding: 10px 8px;
+  }
+  .searchbar input{
+      width: 30%;
+      padding: 0 10px;
+  }
+  
+}
