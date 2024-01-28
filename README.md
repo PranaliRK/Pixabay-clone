@@ -2,6 +2,7 @@
 # NAVBAR
 # You can search for images by name you will get all related images for your search.
 <img width="946" alt="Screenshot 2024-01-28 100812" src="https://github.com/PranaliRK/Pixabay-clone/assets/93364124/23aa45b2-8bc7-4415-9516-083df5f911e5">
+
 # HOME PAGE
 # Here you can see all the images from api.
 
